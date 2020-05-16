@@ -1,0 +1,30 @@
+{
+  "name": "RemoteControlSystem",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "client": "npm run start --prefix client",
+    "server": "nodemon ./bin/www",
+    "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\""
+  },
+  "dependencies": {
+    "client-sessions": "^0.8.0",
+    "cookie-parser": "~1.4.4",
+    "cors": "^2.8.5",
+    "death": "^1.1.0",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "jade": "~1.11.0",
+    "morgan": "~1.9.1",
+    "multer": "^1.4.2",
+    "nodemailer": "^6.4.2",
+    "sequelize": "^5.21.3",
+    "sqlite3": "^4.1.1"
+  },
+  "devDependencies": {
+    "concurrently": "^4.1.2",
+    "nodemon": "^2.0.2"
+  }
+}
